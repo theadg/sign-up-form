@@ -5,14 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Skranji:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
       <!-- Image here -->
-      <aside></aside>
+      <aside>
+        <div class="overlay">
+          <img
+            class="form--logo"
+            src="./images/odin-lined.png"
+            alt="Odin Logo"
+          />
+          <h1 class="form--logo-text">ODIN</h1>
+        </div>
+      </aside>
 
       <!-- Forms here -->
-      <section></section>
+      <section>
+        <header>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />Sign up <em>now</em> to get started
+          </p>
+
+          <p>We <em>know</em> you want to.</p>
+        </header>
+
+        <div class="form--container">
+          <p>Let's do this!</p>
+            <form>
+          <div class="form--input-container">
+            <div class="form--input">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+
+            <div class="form--input">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+
+            <div class="form--input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="form--input">
+              <label for="tel">Phone Number</label>
+              <input type="tel" name="tel" id="tel" required minlength="9" />
+            </div>
+
+            <div class="form--input">
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd" id="pwd" required />
+              <p class="form--support-label" id="pwd-label">
+                * Passwords do not match
+              </p>
+              <p class="form--support-label" id ="pwd-no-label">
+                * Add Password
+              </p>
+            </div>
+
+            <div class="form--input">
+              <label for="confirm-pwd">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm-pwd"
+                id="confirm-pwd"
+                required
+              />
+              <p class="form--support-label" id ="pwd-confirm-no-label">
+                * Add Password
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form--submit">
+          <button id="submit">Create Account</button>
+          <p>Already have an account? <span>Log in</span></p>
+        </div>
+    </form>
+      </section>
     </main>
   </body>
 </html>
