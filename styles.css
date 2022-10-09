@@ -3,3 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --bg-primary: #fff;
+  --bg-secondary: #f9fafb;
+
+  --form-active: #3068d7;
+  --form-error: #c34f3f;
+
+  --primary: #386d48;
+}
